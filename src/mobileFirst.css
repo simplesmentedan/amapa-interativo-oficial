@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+
+    font-family: 'Poppins';
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: rgb(40, 85, 143);
+}
+
+
+.container-header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+    height: 50px;
+
+    background-color: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 50px;
+
+    background-color: none;
+}
+
+.logo img {
+    cursor: pointer;
+
+    height: 40px;
+}
+
+.container-header-main h1 {
+    text-align: center;
+    line-height: 100%;
+    font-size: 140%;
+
+    color: rgb(235, 235, 235);
+}
+
+
+.social-redes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 30px;
+
+    background-color: none;
+}
+
+.social-redes img {
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin: 10px 0 0 10px;
+
+    width: 25px;
+}
+
+.social-redes img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+
+    background-color: none;
+}
+
+.container-section-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px;
+
+    width: 70%;
+    height: auto;
+
+    background-color: rgb(245, 245, 245);
+}
+
+.cards {
+    margin-bottom: 20px;
+    border-radius: 7px;
+
+    width: 100%;
+    height: auto;
+
+    background-color: rgb(190, 213, 245);
+}
+
+.cards:hover {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.cards ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 5% 12%;
+    padding: 0;
+
+    width: 90%;
+}
+
+.cards ul img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.cards ul span {
+    margin: 3% 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+
+    border-radius: 7px;
+}
+
+.cards ul p {
+    margin: -1% 0 1% 0;
+    width: 85%;
+    height: auto;
+
+    background-color: none;
+}
+
+.cards ul a {
+    cursor: pointer;
+
+    width: 250px;
+    height: auto;
+
+    color: rgb(0, 32, 175);
+    background-color: none;
+}
+
+.cards ul a:hover {
+    font-weight: 600;
+
+    color: rgb(17, 59, 247);
+}
+
+.cards.apresentation h1 {
+    margin: 1% 0 2% 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+
+.cards.instagram img {
+    margin: 0 0 0 25%;
+    width: 30%;
+}
+
+.cards.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: none;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.cards.loading p {
+    text-align: center;
+    margin: 20px 20px 10px 20px;
+}
+
+.spinner {
+    border-radius: 100%;
+    margin-bottom: 20px;
+    height: 35px;
+    width: 35px;
+
+    border: 5px solid #DCDCDC;
+    border-left-color: rgb(40, 85, 143);
+}
+
+.spinner.is-animating {
+    animation: loading 2.5s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.btn-back-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border-radius: 65px;
+    bottom: 2%;
+    right: 1%;
+    width: 37px;
+    height: 37px;
+
+    cursor: pointer;
+    background-color: #38322e80;
+    text-decoration: none;
+}
+
+.btn-back-to-top::after {
+    content: '▲';
+    font-size: 25px;
+    font-weight: bold;
+    color: #006eff80;
+    transition: margin-top 250ms;
+}
+
+.btn-back-to-top:hover {
+    margin-top: 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 40px;
+
+    background-color: rgb(218, 218, 218);
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
+@media (min-width: 420px) {
+    body {
+        background: green;
+    }
+}
